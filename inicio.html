@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SOMNIA STUDIO</title>
+      <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <!--favicon-img-->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cssvideo/templatemo-grad-school.css">
+    <link rel="stylesheet" href="css/cssvideo/fontawesome.css">
+    <link rel="stylesheet" href="css/cssvideo/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Añade el enlace de CSS AOS en el <head> -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+<!-- Añade el enlace de JavaScript de AOS al final del body -->
+
+
+
+  </head>
+
+  <body>
+ 
+    <div id="all">
+  <div id="preloader">
+    <div class="p" style="color: darkorange">SOMNIA STUDIO</div>
+</div>
+<div id="breaker"></div>
+
+  
+      <!-- HOME -->
+      <div id="home">
+    
+        <div class="navigation">
+        
+          <div class="logo home-link fade-down">
+           <a href="#" style="color: darkorange">SOMNIA STUDIO</a>
+          </div>
+        
+          <div class="navigation-links">
+            <ul>
+              <li style="color: darkorange" class="links contact-link fade-down"><a href="index.html">Inico </a></li>
+              <li style="color: darkorange" class="links contact-link fade-down"><a href="documental.html">Documental </a></li>
+              <li style="color: darkorange" class="links contact-link fade-down"><a href="productora.html">Productora </a></li>
+              <li style="color: darkorange" class="links contact-link fade-down"><a href="makingof.html">Making of</a></li>   
+             <li style="color: darkorange" class="links contact-link fade-down"><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+          </div>
+        
+        </div>
+        <section id="sec2">
+          <div class="slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div class="swiper-container parallax-slider">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="img-container ini">
+                                <div class="slide-text opacity">
+                                    <a href="#0" class="project-link forest-project-link">
+                                        <span class="movable-text">BIENVENIDOS</span>
+                                        <div class="view-project">A NUESTRA PAGINA</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="img-container ini" >
+                                <div class="slide-text opacity">
+                                    <a href="#0" class="project-link forest-project-link">
+                                        <span class="movable-text">EXPLORA</span>
+                                        <div class="view-project">NUESTRO CONTENIDO</div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                            <div  class="button-container">
+                             <a href="#section1"> <button class="blink-button">COMENZAR</button></a>
+                          </div>
+                        </div>
+
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper y JavaScript de animación -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+     const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 5000, // Tiempo entre cada slide en milisegundos (3 segundos)
+            disableOnInteraction: false, // Continuar autoplay después de la interacción del usuario
+        },
+        // Elimina los controles de navegación
+        navigation: false,
+    });
+
+    window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 100); // Espera 100 ms antes de desplazarse
+        };
+</script>
+
+<style>
+/* Estilos básicos */
+.slider {
+    width: 100%;
+    height: 100vh;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.slide-text {
+    position: absolute;
+    text-align: center;
+    color: darkorange;
+}
+.project-link {
+    font-size: 200px;
+    font-weight: bold;
+}
+.view-project {
+    font-size: 100px;
+    color: white;
+}
+
+/* Animación de texto movible */
+.movable-text {
+    display: inline-block;
+    animation: moveText 3s infinite alternate;
+}
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+}
+
+.img-container {
+    position: relative; /* Permite posicionar el botón respecto a este contenedor */
+}
+
+.button-container {
+    position: absolute; /* Posiciona el botón en la parte inferior */
+    bottom: 20px; /* Ajusta la distancia del borde inferior */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para que quede centrado */
+}
+
+/* Estilos del botón */
+.blink-button {
+    font-size: 1.5rem;
+    color: white;
+    background-color: darkgoldenrod;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    animation: blink-animation 2s infinite; /* Animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+</style>
+              
+    
+            </div>
+
+            <section id="section1" class="section video" data-aos="fade-up" data-aos-duration="2200" data-aos-delay="100"style="background: linear-gradient(104deg, rgb(71 33 14) 0%, rgb(22 20 19) 100%); margin: 0; padding: 0; height: 100vh; width: 100%;">
+              <div class="container h-100">
+                  <div class="row h-100">
+                      <div class="col-md-6 align-self-center">
+                          <div class="left-content">
+                              <h4>Te invitamos a ver el vídeo completo de nuestro <em></em></h4>
+
+                              <h4> <em>DOCUMENTAL "TRAS EL TELÓN: MEMORIAS DE UN ESCENARIO"</em></h4>
+                             <a href="documental.html"> <h4> <em><button class="styled-button">Ver Ahora </button></em></h4></a>
+                            </div>                              
+                      </div>
+                      <div class="col-md-6">
+                         
+                              <Div>
+                                  <img   class="img" src="images/documental.png">
+                              </div>
+                        
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section id="section2" class="section video" data-aos="fade-up" data-aos-duration="2200" data-aos-delay="100" style=" background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(132 49 46) 100%);margin: 0; padding: 0; height: 100vh; width: 100%;">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 ">
+                       
+                        <Div>
+                            <img   class="img" src="images/PRODUCTORA.png">
+                        </div>
+                  
+                </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="left-content">
+                            
+                            <h4>Descubre sobre nuestra productora<em></em></h4>
+
+                            <h4> <em> "SOMNIA STUDIO"</em></h4>
+                           <a href="productora.html"> <h4> <em><button class="styled-button">Mas Info </button></em></h4></a>
+                          </div>                              
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section3" class="section video" data-aos="fade-up" data-aos-duration="2200" data-aos-delay="100" style=" background: linear-gradient(104deg, rgb(71 33 14) 0%, rgb(22 20 19) 100%);margin: 0; padding: 0; height: 100vh; width: 100%;">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 align-self-center">
+                        <div class="left-content">
+                            <h4>Observa nuestro detras de camaras del <em></em></h4>
+
+                            <h4> <em>DOCUMENTAL "TRAS EL TELÓN: MEMORIAS DE UN ESCENARIO"</em></h4>
+                           <a href="makingof.html"> <h4> <em><button class="styled-button">Ver Ahora </button></em></h4></a>
+                          </div>                              
+                    </div>
+                    <div class="col-md-6">
+                       
+                            <Div>
+                                <img   class="img" src="images/FOTO.png">
+                            </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" class="section video" data-aos="fade-up" data-aos-duration="2200" data-aos-delay="100" style=" background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(132 49 46) 100%);margin: 0; padding: 0; height: 100vh; width: 100%;">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6">
+                       
+                        <Div>
+                            <img   class="img" src="images/contacto.png">
+                        </div>
+                  
+                </div>
+                    <div class="col-md-6 align-self-center">
+                        <div class="left-content">
+                            <h4> <em></em></h4>
+
+                            <h4> <em>¿ QUIERES CONTACTARTE CON NOSOTROS ?</em></h4>
+                            <p></p>
+                            <a href="contactanos.html"> <h4> <em><button class="styled-button">Si quiero </button></em></h4></a>
+                          </div>                              
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+          <style>
+            .col-md-6 {
+    display: flex; /* Activa flexbox en columnas */
+    flex-direction: column; /* Asegúrate de que los elementos se apilen */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.col-md-6.d-flex.justify-content-end {
+    /* Este estilo centra el contenido a la derecha */
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+
+    
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animated {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+          </style>
+      <!-- HOME -->
+    </section>
+   
+
+      <!-- ABOUT -->
+
+      <!-- ABOUT -->
+
+      <!-- PROJECTS -->
+      
+
+<!--CONTACT PAGE-->
+1
+
+<!--CONTACT PAGE-->
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bez.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+       $(function(){
+    //marine-slideshow
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide() {  
+        displaySlides(slide_index++);  
+    }  
+    function prevslide() {  
+      displaySlides(slide_index--);   
+    }  
+    function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.opacity = 0;  
+           
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+         
+      }
+      var next = document.getElementById('next');
+      next.addEventListener('click',nextSlide);
+
+      var prev = document.getElementById('prev');
+      prev.addEventListener('click',prevslide);
+  })
+
+  //forest slideshow
+
+  $(function(){
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide() {  
+        displaySlides(slide_index++);  
+    }  
+    function prevslide() {  
+      displaySlides(slide_index--);   
+    }  
+    function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("forest-slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.opacity = 0;  
+           
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+         
+      }
+      var next = document.getElementById('forest-next');
+      next.addEventListener('click',nextSlide);
+
+      var prev = document.getElementById('forest-prev');
+      prev.addEventListener('click',prevslide);
+  })
+  
+  //wildlife slideshow
+
+  $(function(){
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide() {  
+        displaySlides(slide_index++);  
+    }  
+    function prevslide() {  
+      displaySlides(slide_index--);   
+    }  
+    function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("wildlife-slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.opacity = 0;  
+           
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+         
+      }
+      var next = document.getElementById('wildlife-next');
+      next.addEventListener('click',nextSlide);
+
+      var prev = document.getElementById('wildlife-prev');
+      prev.addEventListener('click',prevslide);
+  })
+
+
+    //city slideshow
+
+    $(function(){
+      var slide_index = 1;  
+      displaySlides(slide_index);  
+      function nextSlide() {  
+          displaySlides(slide_index++);  
+      }  
+      function prevslide() {  
+        displaySlides(slide_index--);   
+      }  
+      function displaySlides() {  
+          var i;  
+          var slides = document.getElementsByClassName("city-slides");  
+          if (slide_index > slides.length ) { slide_index = 1 } 
+          if (slide_index < 1) { slide_index = slides.length }  
+          for (i = 0; i < slides.length; i++) {  
+              slides[i].style.opacity = 0;  
+             
+          }  
+          slides[slide_index - 1].style.opacity = 1;  
+           
+        }
+        var next = document.getElementById('city-next');
+        next.addEventListener('click',nextSlide);
+  
+        var prev = document.getElementById('city-prev');
+        prev.addEventListener('click',prevslide);
+
+      
+    })
+
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".section");
+  
+      const animateSections = () => {
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          if (sectionTop < window.innerHeight - 100) {
+            section.classList.add("section-animated");
+          }
+        });
+      };
+  
+      window.addEventListener("scroll", animateSections);
+      animateSections(); // Ejecuta al cargar la página
+    });
+  </script>
+
+    <section>
+
+    </section>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init(); // Inicializa AOS
+</script>
+</html>
